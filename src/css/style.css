@@ -1,0 +1,156 @@
+html{
+    font-family: "Outfit", sans-serif;
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    background-color: hsl(216, 50%, 16%);
+    width: 350px;
+    height: 600px;
+    border-radius: 10px;
+    
+}
+
+.equilibrium-info{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 25px;
+}
+.equilibrium{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+.equilibrium-info .image-link {
+    position: relative;
+    display: flex;
+}
+
+.equilibrium-info .image-link::before{
+    content: '';
+    background-color: hsl(178, 100%, 50%);
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    border-radius: 10px;
+    margin-top: 25px;
+    opacity: 0;
+    transform: 0.3s ease-in-out;
+}
+
+.equilibrium-info .image-link::after {
+    content: '';
+    background: url(../img/icon-view.svg) no-repeat center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: 0.3s ease-in-out;
+}
+
+.equilibrium-info .image-link:hover::before
+{
+    opacity: 0.4;
+}
+
+.equilibrium-info .image-link:hover::after{
+    opacity: 1;
+}
+
+.titulo{
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    font-size: 18px;
+    
+}
+
+.texto{
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.valor{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px;
+}
+
+.container .valor .eth{
+    display: flex;
+    align-items: center;
+}
+
+.container .valor .eth::before{
+    content: '';
+    background: url(../img/icon-ethereum.svg) no-repeat center;
+    width: 11px;
+    height: 18px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.container .valor .texto{
+    display: flex;
+    align-items: center;
+}
+
+.container .valor .texto::before{
+    content: '';
+    background: url(../img/icon-clock.svg) no-repeat center;
+    width: 15px;
+    height: 18px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+hr {
+    margin: 25px;
+    border: 0;
+    border-top: 1px solid hsl(215, 32%, 27%);
+    
+}
+
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.eth{
+    color: hsl(178, 100%, 50%);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.avatar{
+    max-width: 35px;
+    margin-left: 25px;
+    margin-right: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+     
+}
+
+.Wyvern {
+    font-weight: 300;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+
+a:hover {
+    color: hsl(178, 100%, 50%);
+}
